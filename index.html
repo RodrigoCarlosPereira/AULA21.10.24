@@ -4,9 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script>
+        document.getElementById("title").innerHTML = "Titulo"
+
+        function mudarTexto() {
+            document.getElementById("teste4").innerHTML = "teste4"
+        }
+    </script>
 </head>
 <body>
-    <h2>O que o JavaScript pode fazer?</h2>
+    <h2 id="title"></h2>
 
     <p id="teste">JavaScript mudando conteudo do HTML.</p>
 
@@ -26,5 +33,10 @@
     <button type="button" onclick="document.getElementById('teste3').style.display = 'none'">Clique Aqui para somir</button>
 
     <button type="button" onclick="document.getElementById('teste3').style.display = 'block'">Clique Aqui para aparicer</button>
+
+    <p id="teste4"></p>
+
+    <button type="button" onclick="mudarTexto()">clique</button>
+    
 </body>
 </html>
